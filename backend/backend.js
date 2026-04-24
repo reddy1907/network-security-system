@@ -67,4 +67,8 @@ app.get("/logs", async (req, res) => {
   res.json(result.rows);
 });
 
-app.listen(3001, () => console.log("Server running on port 3001"));
+const PORT = process.env.PORT || 3001;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
