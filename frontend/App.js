@@ -11,7 +11,7 @@ function App() {
   }, []);
 
   const fetchLogs = async () => {
-    const res = await axios.get("http://localhost:3001/logs");
+    const res = await axios.get("https://network-security-system-olrq.onrender.com/logs");
     setLogs(res.data);
   };
 
